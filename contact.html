@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Jason Lee - Portfolio</title>
+  <link rel="shortcut icon" href="img/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <header class="page-header">
+    <img src="img/estoria-press-logo.png" height="40px" width="40px" alt="The logo for Estoria Press, owned by Jason Lee" class="page-header__item">
+    <nav class="page-header__item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html"role="menuitem" class="navigation-list__item--active">Contact</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html"role="menuitem" class="navigation-list__item">Work</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <div>
+    <h1>Contact Me</h1>
+    <p>
+      Jason Lee<br>
+      857 E. Southfork Dr.<br>
+      Draper, UT 84020<br>
+      <br>
+      Tel <a href="tel:+13852094204">385.209.4204</a><br>
+      <a href="mailto:jason.lee.cultrans@gmail.com">Email me: jason.lee.cultrans@gmail.com</a><br>
+      <br>
+
+      <form action="" method="post" id="contact-form">
+        <label class="standard-label" for="contact-email">E-mail: </label>
+        <input type="email" required id="contact-email">
+
+        <label class="standard-label" for="contact-tel">Telephone: </label>
+        <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="contact-tel">
+
+        <label class="standard-label" for="contact-message">Message: </label>
+        <textarea required maxlength="240" id="contact-message"></textarea>
+
+        <input type="submit" value="Send Message">
+      </form>
+  </div>
+
+  <footer class="page-footer">
+    <p>
+      Find me on:
+    </p>
+    <div class="social-media">
+      <a class="social-media__link" href="https://github.com/Estorian" target="_blank">
+        <img src="img/github-icon.svg" alt="Github" class="page-footer__social-media-icon">
+      </a>
+      <a class="social-media__link" href="https://www.linkedin.com/in/jason-lee-31106aa6/" target="_blank">
+        <img src="img/linkedin-icon.svg" alt="LinkedIn" class="page-footer__social-media-icon">
+      </a>
+      <a class="social-media__link" href="Estorian#3117" target="_blank">
+        <img src="img/discord-icon.svg" alt="Discord" class="page-footer__social-media-icon">
+      </a>
+    </div>
+  </footer>
+
+<script src="js/tota11y.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,286 @@
+/*
+Colors used
+
+Text color: Dark Gray - #2b2b2b
+Primary Color: Purple - #575483
+Secondary Color: Yellow - #898946
+*/
+
+:root {
+  --primary-color: #575483;
+  --secondary-color: #737b3f;
+  --secondary-color-lighter: #c0cf70;
+  --tertiary-color: #cfbb99;
+  --dark-grey: #2b2b2b;
+  --bold: 700;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: var(--bold);
+  margin-left: 15px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: var(--bold);
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: var(--bold);
+}
+
+.standard-body {
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 30% 0 30%;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+a:hover a:focus {
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--secondary-color);
+}
+
+a:active {
+  color: var(--tertiary-color);
+}
+
+button,
+.button,
+.button:visited {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: 0.5s opacity;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 25px;
+
+
+}
+
+.navigation-list__item--active {
+  text-decoration: none;
+}
+
+.paragraph__code {
+  background-color: black;
+  color: var(--secondary-color-lighter);
+  padding: 3px;
+}
+
+.paragraph__special-text {
+  color: var(--secondary-color);
+  font-family: 'Cinzel', serif;
+}
+
+.profile__portrait {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.page-header__item {
+  flex: 0 1 auto;
+  justify-content: space-between;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+.project-list__item {
+  margin: 20px;
+  display: inline-block;
+  width: 33%;
+}
+
+@supports (display: grid) {
+  .project-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 20px;
+  }
+
+  .project-list__item {
+    background-color: lightgray;
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .project-list__item:last-child {
+    grid-column: 3 / 3;
+    grid-row: 1 / 3;
+  }
+}
+
+
+@media all and (max-width: 500px) {
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .project-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .project-list {
+    grid-gap: 10px;
+  }
+  .project-list__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  .standard-body {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 20px 0 20px;
+  }
+}
+
+/* Animations */
+
+@keyframes background-shift {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(15px, 15px);
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: translate(-15px, -15px);
+  }
+  75% {
+    transform: translate(-15px, 15px);
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: translate(15px, -15px);
+  }
+}
+#icons {
+  animation: 3s background-shift infinite alternate linear;
+}
+
+@keyframes typing {
+  25% {
+    transform: translate(0, 5px);
+  }
+  50% {
+    transform: translate(0, -5px);
+  }
+  75% {
+    transform: translate(0, 5px);
+  }
+  100% {
+    transform: translate(0, -5px);
+  }
+}
+@keyframes typing-r {
+  25% {
+    transform: translate(0, -5px);
+  }
+  50% {
+    transform: translate(0, 5px);
+  }
+  75% {
+    transform: translate(0, -5px);
+  }
+  100% {
+    transform: translate(0, 5px);
+  }
+}
+#hand_l{
+  animation: 1s typing infinite alternate linear;
+}
+#hand_r {
+  animation: 1s typing-r infinite alternate linear;
+}
+
+@keyframes wiggle {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+#laptop {
+  transform-origin: center;
+  animation: .5s wiggle infinite alternate linear;
+}
