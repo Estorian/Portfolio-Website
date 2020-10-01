@@ -133,12 +133,33 @@ button:focus,
 .navigation-list li {
   display: inline-block;
   margin-left: 25px;
-
-
 }
 
 .navigation-list__item--active {
   text-decoration: none;
+}
+
+footer {
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%
+}
+
+.social-media__link {
+  text-decoration: none;
+  margin: 10px;
 }
 
 .paragraph__code {
@@ -158,18 +179,6 @@ button:focus,
   margin-right: 40px;
   height: auto;
   border-radius: 50%;
-}
-
-.page-footer {
-  clear: both;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
 }
 
 .profile {
