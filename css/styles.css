@@ -179,6 +179,7 @@ footer {
   margin-left: 25%;
   margin-right: 25%;
   justify-content: center;
+  color: #fff;
 }
 
 @supports (display: grid) {
