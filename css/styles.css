@@ -109,7 +109,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  position: absolute;
+  position: relative;
   bottom: 10px;
   width: 100%
 }
@@ -164,6 +164,23 @@ footer {
   width: 33%;
 }
 
+.contact-info{
+  margin: 20px;
+  text-align: center
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  padding: 20px;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  justify-content: center;
+}
+
 @supports (display: grid) {
   .project-list {
     display: grid;
@@ -200,7 +217,7 @@ footer {
   }
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 750px) { /*for mobile screens*/
   .project-list {
     grid-gap: 10px;
   }
@@ -210,12 +227,44 @@ footer {
   }
   h1 {
     font-size: 22px;
+    text-align: center;
+    margin-left: auto;
   }
   .standard-body {
     display:flex;
     flex-direction: column;
     text-align: center;
     margin: 0 20px 0 20px;
+  }
+  .profile {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  .profile__portrait {
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+    height: 80%;
+  }
+  .profile__text {
+    margin: 10px;
+    text-align: center;
+  }
+  .button {
+    text-align: center;
+    width: auto;
+    font-size: 20px;
+  }
+  footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%
   }
 }
 
