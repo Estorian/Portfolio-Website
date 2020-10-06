@@ -229,7 +229,7 @@ footer {
   h1 {
     font-size: 22px;
     text-align: center;
-    margin-left: auto;
+    margin: auto;
   }
   .standard-body {
     display:flex;
