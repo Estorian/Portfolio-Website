@@ -15,7 +15,7 @@
 <body>
   <!-- Logo and Navigation bar -->
   <header class="page-header">
-    <img src="img/estoria-press-logo.png" height="40" width="40" alt="The logo for Estoria Press, owned by Jason Lee" class="page-header__item">
+    <img src="img/estoria-press-logo.png" height="75" width="75" alt="The logo for Estoria Press, owned by Jason Lee" class="page-header__item">
     <nav class="page-header__item">
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
@@ -38,60 +38,199 @@
   <section>
     <h1>Work</h1>
     <div class="project-list">
-      <!-- Grid items will live here. -->
+
+
+      <!-- Portfolio Website. -->
       <div class="project-list__item">
         <h2>Portfolio Website</h2>
         <p>
           This entire website (the one you're reading right now) was built using
-          HTML, CSS, and Javascript by me.
+          vanilla HTML, CSS, and Javascript. No fancy libraries. No frameworks
+          or toolsets. Just good, old-fashioned coding.
         </p>
-        <a href="https://github.com/Estorian/Portfolio-Website">See the code on Github</a>
-      </div>
-      <div class="project-list__item">
-        <h2>MyFlix</h2>
+        <h3>
+          Technical skills:
+        </h3>
         <p>
-          This is a mockup for a imdb-like site that allows for login, 
-          favorite movies, and information about genres and directors. 
-          Frontend built with React-Bootstrap. Backend with Node.
+          HTML<br>
+          CSS<br>
+          Javascript<br>
+          Web Design<br>
         </p>
-        <a href="https://github.com/Estorian/myFlix-client">See the frontend code on Github</a>
-        <a href="https://github.com/Estorian/movie_api">See the backend code on Github</a>
+
+        <a href="https://github.com/Estorian/Portfolio-Website" class="project-list__screenshot">
+          <img src="img/portfolio-home.png" width="100%" height="auto"/><br>
+          See the code on Github
+        </a>
       </div>
+
+      <!--MyFlix API-->
+      <div class="project-list__item">
+        <h2>MyFlix: API</h2>
+        <p>
+          This project involved building a server and business logic for an API
+          for an IMBD-like website. It was used as the backend for two of the
+          other projects in this list.
+        </p>
+        <h3>
+          Technical Skills
+        </h3>
+        <p>
+          Node.js<br>
+          mongoDB<br>
+          Heroku App hosting<br>
+          Login with hashed password storage<br>
+          JWT authentication<br>
+          Express
+        </p>
+        <a href="https://github.com/Estorian/movie_api" class="project-list__screenshot">
+          <img src="img/mongoDB-screenshot.png" width="100%" height="auto" /><br>
+          See the code on Github</a>
+      </div>
+
+      <!--10 Candles App-->
       <div class="project-list__item">
         <h2>10 Candles Gameplay app</h2>
         <p>
           This project was designed to be used as an online alternative to blowing
-          out physical candles for the tragic horror game "10 Candles."
+          out physical candles for the tragic horror game "10 Candles." It uses
+          basic JS as the main component. To learn more about the game, visit:
         </p>
-        <a href="files/10-candles-app/candles.html">See the app</a>
+        <a href="https://cavalrygames.com/ten-candles-info">cavalrygames.com/ten-candles</a>
+        <h3>
+          Technical Skills
+        </h3>
+        <p>
+          HTML<br>
+          CSS<br>
+          Javascript<br>
+        </p>
+        <a href="files/10-candles-app/candles.html" class="project-list__screenshot">
+          <img src="img/10-candles-screenshot.png" width="100%" height="auto" /><br>
+          See the app</a>
       </div>
+
+      <!--Pokedex App-->
       <div class="project-list__item">
         <h2>Basic Pokedex App</h2>
         <p>
           This is a basic pokedex app that pulls from the Pokemon API to generate
-          a list of pokemon. Written using Javascript and Bootstrap.
+          a list of pokemon. Written using Javascript and Bootstrap. It was
+          designed for use on a mobile device.
         </p>
-        <a href="https://github.com/Estorian/pokedex-js-app">See the code on Github</a>
+        <h3>
+          Technical Skills
+        </h3>
+        <p>
+          Javascript<br>
+          API interfacing<br>
+          AJAX commands<br>
+          Bootstrap<br>
+        </p>
+        <a href="https://github.com/Estorian/pokedex-js-app" class="project-list__screenshot">
+          <img src="img/pokedex-screenshot.png" width="100%" height="auto" style="text-align: center;"/><br>
+          See the code on Github</a>
       </div>
+
+      <!--Meet PWA-->
       <div class="project-list__item">
-        <h2>Meet PWA</h2>
+        <h2>Meet Progressive Web App</h2>
         <p>
           This is a Progressive Web App (PWA) that uses Google OAuth2 and Amazon Lambda functions
           to pull events from a Google Calendar. It is responsive and can function through
           cached data while offline.
         </p>
-        <a href="https://estorian.github.io/meet/">See how it works</a>
-        <a href="https://github.com/Estorian/meet">See the code on Github</a>
-      </div>
-      <div class="project-list__item">
-        <h2>Other Github Stuff</h2>
+        <h3>
+          Technical Skills
+        </h3>
         <p>
-          If you'd like to see other examples of projects I've done, head on over to
-          my github to see my other repos.
+          React<br>
+          Recharts for dynamic data visualization<br>
+          Google OAuth2 for login<br>
+          Amazon Lambda functions for hosting<br>
+          Enzyme for code testing
         </p>
-        <a href="https://github.com/Estorian/">See the code on Github</a>
+        <a href="https://estorian.github.io/meet/" class="project-list__screenshot">
+          <img src="img/meet-app-screenshot.png" width="100%" height="auto" /><br>
+          See how it works</a>
+        <a href="https://github.com/Estorian/meet" class="project-list__screenshot">See the code on Github</a>
       </div>
-      
+
+      <!--MyFlix React Client-->
+      <div class="project-list__item">
+        <h2>MyFlix: React Client</h2>
+        <p>
+          This project is a frontend client for use with the MyFlix API,
+          built using React.
+          It allows users to register an account, see the movies in the
+          database as well as information about them, and add them to
+          their list of favorites.
+        </p>
+        <h3>
+          Technical Skills
+        </h3>
+        <p>
+          React<br>
+          Bootstrap<br>
+          Redux<br>
+          axios<br>
+          API integration
+        </p>
+        <a href="https://github.com/Estorian/myFlix-client" class="project-list__screenshot">
+          <img src="img/react-myFlix-main.png" width="100%" height="auto" /><br>
+          See the code on Github
+        </a>
+      </div>
+
+      <!--MyFlix Angular Client-->
+      <div class="project-list__item">
+        <h2>MyFlix: Angular Client</h2>
+        <p>
+          This project is a frontend client for use with the MyFlix API,
+          built using Angular. It allows users to register an account,
+          see database movie information, and favorite those movies.
+        </p>
+        <h3>
+          Technical Skills
+        </h3>
+        <p>
+          Angular<br>
+          Material Design<br>
+          API integration
+        </p>
+        <a href="https://trello.com/b/yyRHmYnW/angular-sicflix">Kanban board<br><br></a>
+        <a href="https://github.com/Estorian/myFlix-angular-client" class="project-list__screenshot">
+          <img src="img/angular-myFlix-main.png" width="100%" height="auto" /><br>
+          See the app in action
+        </a>
+        <a href="https://github.com/Estorian/myFlix-angular-client" class="project-list__screenshot">
+          See the code on Github
+        </a>
+      </div>
+
+      <!--React-Native Chat App-->
+      <div class="project-list__item">
+        <h2>React Native Chat App</h2>
+        <p>
+          This project is a native mobile app for chatting on 
+          Android or iOS devices. It allows users to chat with
+          others in a shared chatroom.
+        </p>
+        <h3>
+          Technical Skills
+        </h3>
+        <p>
+          React-Native<br>
+          Google Firebase<br>
+          Expo Android development<br>
+          Native Mobile App development
+        </p>
+        <a href="https://github.com/Estorian/react-native-chat-app" class="project-list__screenshot">
+          <img src="img/chat-app-screenshot.png" width="100%" height="auto" /><br>
+          See the code on Github
+        </a>
+      </div>
+
       <div class="project-list__item">
         <h2>YOUR web project</h2>
         <p>
@@ -122,8 +261,6 @@
       </a>
     </div>
   </footer>
-
-<script src="js/tota11y.min.js"></script>
 
 </body>
 
