@@ -153,6 +153,11 @@ footer {
   margin: auto;
 }
 
+.page-footer__social-media-icon {
+  height: 25px;
+  width: 25px;
+}
+
 .social-media__link {
   text-decoration: none;
   margin: 10px;
